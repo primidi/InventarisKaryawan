@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="inventariskaryawan.views.BarangForms">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="inventariskaryawan.views.PeminjamanForms">
   <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="5" left="10" bottom="5" right="10"/>
     <constraints>
@@ -8,16 +8,16 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="1c8e1" class="javax.swing.JLabel" binding="lbDataBarang">
+      <component id="50e07" class="javax.swing.JLabel" binding="lbDataPeminjaman">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font size="20" style="1"/>
-          <text value="Data Barang"/>
+          <text value="Data Peminjaman"/>
         </properties>
       </component>
-      <grid id="8b092" binding="panelTable" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="9afc5" binding="panelTable" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="5" left="10" bottom="5" right="10"/>
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -25,20 +25,20 @@
         <properties/>
         <border type="none" title="Tabel Data"/>
         <children>
-          <scrollpane id="169b2">
+          <scrollpane id="94b2c">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
             <children>
-              <component id="e0abe" class="javax.swing.JTable" binding="tableKaryawan">
+              <component id="3f309" class="javax.swing.JTable" binding="tableKaryawan">
                 <constraints/>
                 <properties/>
               </component>
             </children>
           </scrollpane>
-          <grid id="c8259" binding="btnPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="f6ea0" binding="btnPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="10" right="0"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -46,28 +46,20 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="8cfc9" class="javax.swing.JButton" binding="btnEdit">
+              <component id="36ece" class="javax.swing.JButton" binding="btnDelete">
                 <constraints>
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Ubah"/>
-                </properties>
-              </component>
-              <component id="503ef" class="javax.swing.JButton" binding="btnDelete">
-                <constraints>
-                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="Hapus"/>
                 </properties>
               </component>
-              <hspacer id="7f7e6">
+              <hspacer id="6efe7">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="c29b7" class="javax.swing.JButton" binding="btnAdd">
+              <component id="8b601" class="javax.swing.JButton" binding="btnAdd">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>

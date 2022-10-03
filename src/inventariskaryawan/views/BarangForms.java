@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class BarangForms extends JFrame implements ActionListener {
-    private JLabel lbDataKaryawan;
+    private JLabel lbDataBarang;
     private JPanel mainPanel;
     private JPanel panelTable;
     private JTable tableKaryawan;
