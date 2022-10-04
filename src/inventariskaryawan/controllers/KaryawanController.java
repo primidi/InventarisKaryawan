@@ -4,6 +4,7 @@ import inventariskaryawan.config.DatabaseConnection;
 
 import javax.swing.table.DefaultTableModel;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class KaryawanController {
@@ -40,6 +41,20 @@ public class KaryawanController {
         }
 
         return new DefaultTableModel(data, columnNames);
+    }
+
+    public ArrayList<Integer> getKaryawanIds() throws SQLException {
+        Statement statement = this.database.createStatement();
+
+        String query = "SELECT id_karyawan FROM karyawan";
+        ResultSet result = statement.executeQuery(query);
+
+        ArrayList<Integer> ids = new ArrayList<>();
+        while (result.next()) {
+            ids.add(result.getInt("id_karyawan"));
+        }
+
+        return ids;
     }
 
     public void createKaryawan(

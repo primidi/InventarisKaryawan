@@ -74,7 +74,7 @@ public class KaryawanForms extends JFrame implements ActionListener {
         int dialog = JOptionPane.showConfirmDialog(
                 this,
                 manipulatePanel,
-                "Tambah Data",
+                "Tambah Data Karyawan",
                 JOptionPane.OK_CANCEL_OPTION
         );
 
@@ -108,7 +108,7 @@ public class KaryawanForms extends JFrame implements ActionListener {
         int dialog = JOptionPane.showConfirmDialog(
                 this,
                 manipulatePanel,
-                "Ubah Data",
+                "Ubah Data Karyawan",
                 JOptionPane.OK_CANCEL_OPTION
         );
 
@@ -136,7 +136,7 @@ public class KaryawanForms extends JFrame implements ActionListener {
         int dialog = JOptionPane.showConfirmDialog(
                 this,
                 confirmPanel,
-                "Hapus Data",
+                "Hapus Data Karyawan",
                 JOptionPane.OK_CANCEL_OPTION
         );
 
