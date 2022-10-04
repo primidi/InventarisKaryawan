@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2022 at 09:05 AM
+-- Generation Time: Oct 04, 2022 at 09:15 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -143,7 +143,7 @@ ALTER TABLE `peminjaman`
 --
 ALTER TABLE `peminjaman`
   ADD CONSTRAINT `fk__peminjaman.id_barang__barang.id_barang` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk__peminjaman.id_karyawan__karyawan.id_karyawan` FOREIGN KEY (`id_karyawan`) REFERENCES `karyawan` (`id_karyawan`);
+  ADD CONSTRAINT `fk__peminjaman.id_karyawan__karyawan.id_karyawan` FOREIGN KEY (`id_karyawan`) REFERENCES `karyawan` (`id_karyawan`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
