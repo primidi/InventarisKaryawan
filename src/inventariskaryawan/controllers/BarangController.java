@@ -13,7 +13,7 @@ public class BarangController {
 
     public BarangController() throws SQLException {
         this.conn = new DatabaseConnection();
-        this.database = conn.getConnection();
+        this.database = conn.getDbConnection();
     }
 
     public DefaultTableModel getBarang() throws SQLException {

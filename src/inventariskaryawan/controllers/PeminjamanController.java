@@ -13,7 +13,7 @@ public class PeminjamanController {
 
     public PeminjamanController() throws SQLException {
         this.conn = new DatabaseConnection();
-        this.database = conn.getConnection();
+        this.database = conn.getDbConnection();
     }
 
     public DefaultTableModel getPeminjaman() throws SQLException {

@@ -13,7 +13,7 @@ public class KaryawanController {
 
     public KaryawanController() throws SQLException {
         this.conn = new DatabaseConnection();
-        this.database = conn.getConnection();
+        this.database = conn.getDbConnection();
     }
     public DefaultTableModel getKaryawan() throws SQLException {
         Statement statement = this.database.createStatement();
